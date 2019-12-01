@@ -82,7 +82,7 @@ class MessageBubble extends StatelessWidget {
                 ),
                 Image.asset(
                   imagem,
-                  width: 120.0,
+                  width: 200.0,
                   height: 200.0,
                 ),
                 Row(

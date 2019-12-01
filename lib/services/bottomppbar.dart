@@ -7,11 +7,12 @@ import 'package:know_law/screens/recompensas.dart';
 
 class bottomButton extends StatelessWidget {
   bottomButton(
-      {@required this.icon, @required this.onPressed, @required this.text});
+      {@required this.image, @required this.onPressed, @required this.text});
 
   final String text;
   final Function onPressed;
-  final IconData icon;
+  final String image;
+//  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,12 @@ class bottomButton extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              Icon(icon),
+//              Icon(icon),
+              Image.asset(
+                image,
+                width: 24.0,
+                height: 24.0,
+              ),
               Flexible(
                 child: Text(
                   text,
@@ -78,7 +84,8 @@ class bottomBar extends StatelessWidget {
     List<Widget> botoes = [];
     botoes.add(
       bottomButton(
-          icon: Icons.home,
+//          icon: Icons.home,
+          image: 'images/home.png',
           onPressed: () {
             Navigator.pushNamed(context, HomeScreen.id);
           },
@@ -87,7 +94,7 @@ class bottomBar extends StatelessWidget {
 
     botoes.add(
       bottomButton(
-          icon: Icons.import_contacts,
+          image: 'images/mountain-route.png',
           onPressed: () {
             Navigator.pushNamed(context, CursosScreen.id);
           },
@@ -95,20 +102,20 @@ class bottomBar extends StatelessWidget {
     );
     botoes.add(
       bottomButton(
-          icon: Icons.attach_money,
+          image: 'images/report.png',
           onPressed: () {
             Navigator.pushNamed(context, ProgressoScreen.id);
           },
           text: 'Progresso'),
     );
-//    botoes.add(
-//      bottomButton(
-//          icon: Icons.assignment_ind,
-//          onPressed: () {
-//            Navigator.pushNamed(context, RecompensasScreen.id);
-//          },
-//          text: 'Recompensas'),
-//    );
+    botoes.add(
+      bottomButton(
+          image: 'images/present.png',
+          onPressed: () {
+            Navigator.pushNamed(context, RecompensasScreen.id);
+          },
+          text: 'Recompensas'),
+    );
 //    botoes.add(
 //      bottomButton(
 //          icon: Icons.menu,

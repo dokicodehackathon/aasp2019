@@ -85,12 +85,14 @@ class MessageBubble extends StatelessWidget {
                       SizedBox(
                         width: 10.0,
                       ),
-                      Text(
-                        '$titulo',
-                        style: TextStyle(
-                          fontSize: 14.0,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
+                      Expanded(
+                        child: Text(
+                          '$titulo',
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                       SizedBox(

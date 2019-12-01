@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:know_law/screens/chat.dart';
+import 'package:know_law/screens/recompensas.dart';
 import 'package:know_law/services/bottomppbar.dart';
 import 'package:know_law/services/messages.dart';
 import 'package:know_law/services/parceiros.dart';
@@ -125,7 +126,7 @@ class _DetalheScreenState extends State<DetalheScreen> {
               ],
             ),
             SizedBox(
-              height: 8.0,
+              height: 5.0,
             ),
             Image.asset('images/detalhe.png'),
             Column(
@@ -209,7 +210,7 @@ class _DetalheScreenState extends State<DetalheScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 10.0,
+                  height: 5.0,
                 ),
                 Material(
                   elevation: 5.0,
@@ -261,7 +262,7 @@ class _DetalheScreenState extends State<DetalheScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 10.0,
+                  height: 5.0,
                 ),
                 Material(
                   elevation: 5.0,
@@ -313,7 +314,7 @@ class _DetalheScreenState extends State<DetalheScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 150.0,
+                  height: 120.0,
                 )
               ],
             ),
@@ -392,7 +393,7 @@ class _DetalheScreenState extends State<DetalheScreen> {
                       ),
                       FlatButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, DetalheScreen.id);
+                          Navigator.pushNamed(context, RecompensasScreen.id);
                         },
                         child: Column(
                           children: <Widget>[

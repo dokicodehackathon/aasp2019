@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:know_law/services/firebase_notification_handler.dart';
 import 'package:know_law/services/messages.dart';
 import 'package:know_law/services/pesquisa.dart';
+import 'home.dart';
 import 'package:know_law/services/trilha.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:know_law/services/topo.dart';
@@ -162,7 +163,7 @@ class _ProgressoScreenState extends State<ProgressoScreen>
                   children: <Widget>[
                     FlatButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, ProgressoScreen.id);
+                        Navigator.pushNamed(context, HomeScreen.id);
                       },
                       child: Column(
                         children: <Widget>[
